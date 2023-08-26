@@ -1,0 +1,76 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background-image: url("homebg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  width: 100%;
+  border-radius: 0 0 50% 50%;
+  margin-bottom: 5%;
+}
+.navbar-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+
+h4 {
+  color: white;
+  font-size: 14pt;
+  position: relative;
+  left: 5%;
+  bottom: 2%;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  position: relative;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+#offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+#offers button {
+  background-color: #ff9430;
+  border: none;
+  border-radius: 20px;
+  /* padding-left: 0.5%;
+    padding-right: 0.5%; */
+  padding: 0.2% 0.5%;
+  width: 40%;
+}

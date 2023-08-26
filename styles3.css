@@ -1,0 +1,182 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background-image: url("homebg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  width: 100%;
+  border-radius: 0 0 50% 50%;
+  margin-bottom: 5%;
+}
+.navbar-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+
+#navbar h4 {
+  color: white;
+  font-size: 14pt;
+  position: relative;
+  left: 5%;
+  bottom: 2%;
+}
+
+#navbar a:visited {
+  color: white;
+  text-decoration: none;
+}
+#navbar a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  position: relative;
+  align-items: center;
+}
+
+#navbar h2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.barbecue {
+  filter: brightness(50%);
+}
+
+.barbecue img {
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+.pizza1 {
+  position: relative;
+  top: 5%;
+  right: 29%;
+  border-radius: 50%;
+  background-color: white;
+  height: 250px;
+}
+
+.sideimg {
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 3%;
+  padding-right: 0%;
+  width: 35%;
+}
+
+#reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.search-bar {
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  padding: 6px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  margin-bottom: 5%;
+}
+
+#search-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+#search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  cursor: pointer;
+  position: relative;
+  left: 65%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.explore {
+  display: flex;
+  flex-direction: row;
+}
+
+.explore h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 25pt;
+}
+
+.explore p {
+  color: #75797f;
+  font-size: 13pt;
+}
+
+.btn-green {
+  background-color: #df6751;
+  color: white;
+  padding: 1.5%;
+  font-size: 100%;
+  border: none;
+  border-radius: 24px;
+}
+
+.btn-green:hover {
+  background-color: #cb543f;
+}

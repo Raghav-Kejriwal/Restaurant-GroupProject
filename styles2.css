@@ -1,0 +1,154 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.foodpic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.foodpic img {
+  height: 20rem;
+}
+.foodpic-bottom {
+  position: relative;
+  bottom: 5%;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+}
+.welcome {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.please {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.btn {
+  background-color: #ff9430;
+  text-align: left;
+  color: black;
+  border-radius: 12px;
+  border: none;
+  width: 350px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.reset {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.remember {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.or {
+  text-align: center;
+  font-size: x-large;
+}
+
+.facebook {
+  display: flex;
+  justify-content: space-between;
+}
+.google {
+  display: flex;
+  justify-content: space-between;
+  border-color: #f60000, #fbbc05, #ffd653, #34a853, #34a853, #03c0fc;
+}
+.apple {
+  display: flex;
+  justify-content: space-between;
+}
+.alo {
+  width: 40px;
+  height: 55.78px;
+}
+.diff1 {
+  background-color: #0047feba;
+  border-color: #03c0fc;
+}
+.diff2 {
+  background-color: gainsboro;
+  border-color: #f60000, #fbbc05, #ffd653, #34a853, #34a853, #03c0fc;
+}
+.diff3 {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.dont {
+  font-weight: 500;
+}
+.log-in {
+  background-color: #ff9430;
+  text-align: left;
+  color: black;
+  border-radius: 12px;
+  border: none;
+  width: 250px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}
+.new {
+  background-color: #ff9430;
+  text-align: left;
+  color: black;
+  border-radius: 12px;
+  border: none;
+  width: 250px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}
+input[type="email"] {
+  border: none;
+  border-radius: 0;
+  background-color: #ff9430;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ff9430;
+}
+input[type="password"] {
+  border: none;
+  border-radius: 0;
+  background-color: #ff9430;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ff9430;
+}

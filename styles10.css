@@ -1,0 +1,266 @@
+/* Change the color of the slider when in Veg mode */
+body.active .slider {
+  background-color: red;
+}
+
+/* Change the color of the slider when in Non-Veg mode */
+body:not(.active) .slider {
+  background-color: green;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #00c300; /* Green color */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00c300;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Slider label style */
+.slider-label {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #00c300; /* Initial color for veg tab */
+  transition: color 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider-label {
+  margin-left: 10px;
+}
+
+body {
+  background-color: #e3e7e8;
+  font-family: system-ui;
+}
+.title {
+  margin: 40px 60px;
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  top: 0%;
+}
+.container {
+  width: 1000px;
+  margin: auto;
+  transition: 0.5s;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-top: 50px;
+  margin: 40px 60px;
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  top: 0%;
+}
+header .shopping {
+  position: relative;
+  text-align: right;
+}
+header .shopping img {
+  width: 40px;
+  margin: 0%;
+  position: absolute;
+  top: 5%;
+  right: -450%;
+}
+header .shopping span {
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  right: -400%;
+  padding: 3px 10px;
+}
+/* The rest of your CSS styles */
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+.list .item {
+  text-align: center;
+  background-color: #dce0e1;
+  padding: 20px;
+  box-shadow: 0 50px 50px #757676;
+  letter-spacing: 1px;
+}
+.list .item img {
+  width: 90%;
+  height: 430px;
+  object-fit: cover;
+}
+.list .item .title {
+  font-weight: 600;
+}
+.list .item .price {
+  margin: 10px;
+}
+.list .item button {
+  background-color: #00c300;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+.nonveg {
+  padding: 5px;
+  color: red;
+  font-weight: 700;
+}
+/* .card {
+  cursor: url(https://cdn.custom-cursor.com/db/cursor/32/colorful_cursor.png),
+    default !important;
+  position: relative;
+} */
+.card {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #453e3b;
+  height: 100vh;
+  transition: 0.5s;
+}
+.active .card {
+  left: calc(100% - 500px);
+}
+.active .container {
+  transform: translateX(-200px);
+}
+.p1 {
+  display: inline-block;
+  width: 20%;
+  margin: 0%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.p2 {
+  display: inline-block;
+  width: 20%;
+  margin: 0%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.card h1 {
+  color: #e8bc0e;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.card .checkOut {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card .checkOut div {
+  background-color: #e8bc0e;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card .checkOut div:nth-child(2) {
+  background-color: #1c1f25;
+  color: #fff;
+}
+.listCard li {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCard li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCard li img {
+  width: 90%;
+}
+.listCard li button {
+  background-color: #fff5;
+  border: none;
+}
+.listCard .count {
+  margin: 0 10px;
+}
+.item select {
+  background-color: green; /* Change the background color */
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* Style the "Add to Cart" button */
+.item button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
